@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Gallery With Auto Slide and Loop</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <link rel="stylesheet"  href="css/lightGallery.css"/>
+    <style>
+    	ul{
+			list-style: none outside none;
+		    padding-left: 0;
+		}
+		.gallery li {
+			display: block;
+			float: left;
+			height: 100px;
+			margin-bottom: 6px;
+			margin-right: 6px;
+			width: 100px;
+		}
+		.gallery li a {
+			height: 100px;
+			width: 100px;
+		}
+		.gallery li a img {
+			max-width: 100px;
+		}
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/lightGallery.min.js"></script>
+    <script>
+    	 $(document).ready(function() {
+			$("#lightGallery").lightGallery();
+		});
+    </script>
+</head>
+<body>
+<ul id="lightGallery" class="gallery">
+					<li data-src="images/chart1.jpg"> 
+						<a href="#">
+						<img src="images/chart1.jpg" class="img-responsive"  />
+						</a> 
+					</li>
+					<li data-src="images/chart2.jpg" > 
+						<a href="#">
+						<img src="images/chart2.jpg" class="img-responsive"  />
+						</a> 
+					</li>
+					<li data-src="images/chart3.jpg"> 
+						<a href="#">
+						<img src="images/chart3.jpg" class="img-responsive" />
+						</a> 
+					</li>
+				</ul>	
+				
+</body>
+</html>
